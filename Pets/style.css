@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    line-height: 1;
+    scroll-behavior:smooth;
+  }
+
+  ._container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  ._gray {
+    background: #F6F6F6;
+    width: 100%;
+}
+
+._activ {
+    color: #292929;
+    border-bottom: solid 3px #F1CDB3;;
+}
+
+/* ШАПКА */
+
+.header {
+    margin: 30px 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+}
+._container {
+}
+.logo p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+
+    color: #292929;
+}
+.name_logo {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+    margin-bottom: 10px;
+
+}
+
+/* НАВИГАЦИЯ */
+
+.nav {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.menu_list {
+    display: flex;
+
+}
+.menu_item {
+    margin-right: 35px;  
+}
+
+.menu_item:last-child {
+    margin-right: 0px;
+}
+
+.menu_link {
+    color: #545454;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.menu_link:hover {
+    color: #292929;
+}
+
+/* ПОДЧЕРКИВАНИЕ */
+
+.menu_link::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 3px;
+    width: 0;
+    background:  #F1CDB3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  .menu_link:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* ОСНОВА */
+
+.block_our_pets {
+    padding: 80px 40px 100px 40px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+
+    margin-bottom: 45px;
+}
+
+.list_pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 15px;
+}
+.item_pets {
+    background-color: #FAFAFA;
+
+    margin-bottom: 30px;
+}
+
+.item_pets:hover {
+    z-index: 1;
+    box-shadow: 0 5px 25px rgb(30 31 33 / 12%);
+    border-top-color: transparent;
+}
+
+.name_pets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    margin: 30px 0px;
+
+    color: #545454;
+}
+
+.btn_pets {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #292929;
+
+    background-color: #FAFAFA;
+    padding: 15px 45px;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+
+    margin: 0px 41px 30px 41px;
+    cursor: pointer;
+}
+
+.list_arrow {
+    margin: 0px 430px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    letter-spacing: 0.06em;
+
+    color: #292929;
+}
+
+.item_arrow_gray button {
+    padding: 17px 20px 15px 20px;
+
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    background: #F6F6F6;
+}
+.item_arrow_pink button {
+    padding: 17px 20px 15px 20px;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background: #F6F6F6;
+}
+
+.item_arrow-two_gray button {
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    background: #F6F6F6;
+
+    padding: 17px 16px 15px 16px;
+}
+
+.item_arrow-two_pink button {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    cursor: pointer;
+
+    padding: 17px 16px 15px 16px;
+    background: #F6F6F6;
+}
+
+.item_arrow-two_pink button:hover {
+    background-color: #F1CDB3;
+}
+
+.item_arrow_pink button:hover {
+    background-color: #F1CDB3;
+}
+
+
+
+
+.item_arrow-num_pink {
+    background: #F1CDB3;
+    border-radius: 100px;
+
+    padding: 14px 21px 15px 22px;
+}
+
+/* ПОДВАЛ */
+
+.repeat_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+
+}
+
+.footer {
+    padding: 40px 40px 0px 40px;
+}
+
+.block_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_column {
+    display: flex;
+    flex-direction: row;
+}
+
+._white {
+    color: #FFFFFF;
+}
+
+.one {
+    margin: 0px 160px 0px 0px;
+}
+
+._repeat_text {
+    display: flex;
+    align-items: center;
+    
+
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #F1CDB3;
+    margin-top: 42px ;
+}
+
+._repeat_text img {
+    margin-right: 20px;
+}
+
+._repeat_text a {
+    color: #F1CDB3;
+}
+
+._gradient{
+    background: -webkit-linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+    background: -moz-linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+    background: linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+}
+
+
+
+
+
