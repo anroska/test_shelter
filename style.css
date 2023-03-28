@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    line-height: 1;
+    scroll-behavior:smooth;
+  }
+
+._gray {
+    background: #F6F6F6;
+    width: 100%;
+}
+
+  ._container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+._activ {
+    color: #FAFAFA;
+    border-bottom: solid 3px #F1CDB3;
+}
+/* НАВИГАЦИЯ */
+
+._gradient{
+    background: -webkit-linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+    background: -moz-linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+    background: linear-gradient(135deg, rgb(91, 72, 58) 10%, rgb(38, 36, 37) 70%, rgb(33, 31, 32) 100%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 30px 0px 10px 40px;
+}
+
+.name_logo {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+
+    color: #F1CDB3;
+}
+
+.logo p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding-left: 5px;
+
+    color: #FFFFFF;
+}
+
+/* ПОДЧЕРКИВАНИЕ */ 
+
+  .menu_link::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 3px;
+    width: 0;
+    background:  #F1CDB3;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  .menu_link:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .menu_link:hover {
+    color: #FAFAFA;
+  }
+
+.menu_list {
+    display: flex;
+    margin-top: 46px;
+}
+
+.menu_item {
+    margin-right: 35px ;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.menu_item:last-child {
+    margin-right: 40px;
+}
+
+.menu_link {
+    color: #CDCDCD;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+/* ПЕРВЫЙ СЛАЙД */
+
+
+.block_not_only {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 80px 40px 0px 40px;
+}
+
+.only_block {
+    margin-right: 42px;
+}
+
+.only_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+
+    color: #FFFFFF;
+
+    padding-bottom: 42px;
+    margin-top: 164px;
+}
+
+.all_text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: #CDCDCD;
+
+    margin-bottom: 55px;
+}
+
+.btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+
+    color: #292929;
+
+    padding: 15px 45px;
+
+    background: #F1CDB3;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background: #f8ba8e;
+}
+
+/* ВТОРОЙ СЛАЙД */
+
+.block_about {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 224px 100px 215px;
+    
+}
+
+.block_about div {
+    margin-top: 14px;
+}
+
+.repeat_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.about_text {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: #4C4C4C;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.about_text_two {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+
+    color: #4C4C4C;
+}
+
+/* ТРЕТИЙ СЛААЙД */
+
+.block_our_friends {
+    padding: 80px 40px 100px 40px;  
+}
+
+.our_friends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_our_friends {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 60px;
+}
+
+._center {
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.arrow {
+    display: inline-block;
+    margin-top: 192px;
+    margin-bottom: 214px;
+    padding: 15px 17px;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 50%;
+
+    margin-left: 49px;
+    margin-right: 49px;
+}
+
+.name_pet {
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+
+    padding: 30px 0px;
+}
+.item_our_friends {
+    background-color: #FAFAFA;
+
+    margin-left: 94px;
+}
+
+.item_our_friends:hover {
+    z-index: 1;
+    box-shadow: 0 5px 25px rgb(30 31 33 / 12%);
+    border-top-color: transparent;
+}
+
+.item_our_friends:nth-child(2) {
+    margin-left: 0px;
+}
+
+.link_our_friends {
+    margin: 0px 42px 30px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+
+    color: #292929;
+    padding: 15px 45px;
+    background-color: #FAFAFA;
+
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
+
+.more_btn {
+    display: inline-block;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+
+    color: #292929;
+
+    padding: 15px 45px;
+    margin-top: 38px;
+
+    background: #F1CDB3;
+    border-radius: 100px;
+}
+
+/* ЧЕТВЕРТЫЙ БЛОК */
+
+.block_help {
+    margin: 80px 40px 100px 40px;
+}
+
+.list_help {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #545454;
+
+    align-items: center;
+    justify-content: center;
+    
+    margin: 60px 87px 0px 87px;
+}
+.list_help_one {
+    display: flex;
+    justify-content: space-between;
+}
+.item_help_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list_help_two {
+    display: flex;
+    justify-content: space-between;
+}
+.item_help_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 55px 0px 0px 0px;
+}
+
+.item_help_two:nth-child(1) {
+    margin: 60px 0px 0px 84px;
+}
+
+.item_help_two:nth-child(4) {
+    margin: 60px 84px 0px 0px;
+}
+
+.text_help {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ПЯТЫЙ БЛОК */
+
+.block_in_addition {
+    padding: 80px 183px 100px;
+}
+
+.block_addition {
+    display: flex;
+}
+
+.text_in_addition {
+    margin-left:30px;
+}
+
+.text_name_bank {
+    margin-top: 20px;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+
+    letter-spacing: 0.06em;
+
+    color: #545454;
+}
+
+.num_card {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    letter-spacing: 0.06em;
+
+    color: #545454;
+
+    padding: 10px 15px;
+    margin: 20px 0px;
+
+    background: #F1CDB3;
+    border-radius: 9px;
+}
+
+.num_card a{
+    color: #545454;
+}
+
+.text_legal_info {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #B2B2B2;
+}
+
+/* ПОДВАЛ */
+
+.footer {
+    padding: 40px 40px 0px 40px;
+}
+
+.block_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_column {
+    display: flex;
+    flex-direction: row;
+}
+
+._white {
+    color: #FFFFFF;
+}
+
+.one {
+    margin: 0px 160px 0px 0px;
+}
+
+._repeat_text {
+    display: flex;
+    align-items: center;
+    
+
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+
+    color: #F1CDB3;
+    margin-top: 42px ;
+}
+
+._repeat_text img {
+    margin-right: 20px;
+}
+
+._repeat_text a {
+    color: #F1CDB3;
+}
+
+
+
+
